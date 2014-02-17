@@ -1,0 +1,23 @@
+1. Add models to Django App of Blog.
+
+Post
+fields:
+	text:
+	title:
+	date and time of post:
+	
+Comment
+fields
+	post:
+	text:
+	date and time of post:
+	
+2. Let these models be in admin section of site. Using this link:
+
+http://djbook.ru/rel1.6/intro/tutorial02.html #yes, it's in russian :)
+
+change the style of the page. 
+I want the list of all objects be not just like the list but like the nice table
+(e.g., http://djbook.ru/rel1.6/_images/admin13t.png)
+
+i don't need any additional colums that are not mentioned in models.py (like 'was published recently' in example above). Just model's fields.

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    {% if friends %}
+        <ul>
+        {% for friend in friends %}
+            <li> {{friend}} </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <h2>Forever alone :((</h2>
+    {% endif %}
+
+</body>
+</html>
