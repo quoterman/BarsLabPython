@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+{#    <h1>Post #{{ id }} </h1>#}
+{#    {% if id > 10 %}#}
+{#    <h2>Year: 2014</h2>#}
+{#    {% else %}#}
+{#    <h2>Year: 2013</h2>#}
+{#    {% endif %}#}
+
+    {% if friends %}
+        <ul>
+        {% for friend in friends %}
+            <li> {{friend}} </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <h2>Forever alone :((</h2>
+    {% endif %}
+
+</body>
+</html>
