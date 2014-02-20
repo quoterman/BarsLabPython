@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h1>Groups page</h1>
+        <ul>
+        {% for group in groups %}
+            <li><a href="{{ group.id }}">{{ group.group_name }}</a></li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>

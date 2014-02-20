@@ -1,0 +1,9 @@
+Add templates to your blog aplication.
+
+That is pretty much the same job that you've done in the class.
+
+First template is needed to display the list of your posts in the blog, and the titles of them are the links to the single page of single post (you need another template for it).
+
+See the same thing: LIST of POSTS <--> POST PAGE in homework, and LIST of Groups <---> Group Page in classwork)
+
+But the list of the post must have just the title of post and the date of the post.
