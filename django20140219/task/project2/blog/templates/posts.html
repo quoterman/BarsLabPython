@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div style="text-align: center">
+        <h1>List of post</h1>
+        {% for p in post %}
+            <li style="List-style-type: none"> <a href = "posts/{{ p.id }}"> <h2>{{ p.post_title }}</h2> </a>
+                {{ p.post_dateTime }}
+            </li>
+        {% endfor %}
+    </div>
+
+{#    {% if friends %}#}
+{#        <ul>#}
+{#        {% for friend in friends %}#}
+{#            <li> {{friend}} </li>#}
+{#        {% endfor %}#}
+{#        </ul>#}
+{#    {% else %}#}
+{#        <h2>Forever alone :((</h2>#}
+{#    {% endif %}#}
+
+</body>
+</html>
