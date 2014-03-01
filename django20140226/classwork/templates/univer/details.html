@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>GROUP # {{ group.group_name }}</h1>
+    <h2>Day # {{ group.group_date }}</h2>
+    List of students:
+    <ul>
+    {% for student in group.student_set.all %}
+        <li>{{ student.student_name }}.
+        <a href="{% url 'student_delete' student.id %}">Удалить</a>
+
+        </li>
+    {% endfor %}
+    </ul>
+    <a href="{% url 'student_new' %}">Добавить нового</a>
+</body>
+</html>

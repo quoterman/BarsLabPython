@@ -1,0 +1,9 @@
+Add all CRUD operations in your blog application: 
+
+So we can add new posts, remove existing posts (USING POST Method, not GET, not how we did it in class!), editing existing posts and displaying the list of all posts and the details views of one post.
+
+about deleting:
+
+GET posts/<id>/delete - displaying the confirmation message "do you really want to delete this post"?
+
+POST posts/<id>/delete - deletes the post with id = <id>
