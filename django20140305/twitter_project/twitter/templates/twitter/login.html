@@ -1,0 +1,11 @@
+{% extends 'twitter/application.html' %}
+
+{% block mainarea %}
+<form action="{% url 'login' %}" method="POST">{% csrf_token %}
+	Username:<br/>
+	<input type="text" name="username" autofocus/> <br/>
+	Password:<br/>
+	<input type="password" name="password"/> <br/>
+	<input type="submit" value="Log in" />
+</form>
+{% endblock %}
