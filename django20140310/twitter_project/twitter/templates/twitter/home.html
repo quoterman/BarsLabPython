@@ -1,0 +1,17 @@
+{% extends 'twitter/application.html' %}
+
+{% block mainarea %}
+
+<a href="{% url 'twitter:logout' %}">Logout</a>
+<form action="{% url 'twitter:tweet' %}" method='POST'>{% csrf_token %}
+	<p><textarea name="text" placeholder='Tweet something'></textarea></p>
+	<p><input type="submit" value="Tweet"/></p>
+</form>
+<hr>
+{% for t in tweets %}
+	<p><b>{{ t.user }}</b>: {{ t.text }}</p>
+	<p><i>Published on: {{ t.published_on }} </i></p>
+	<hr/>
+{% endfor %}
+
+{% endblock %}
