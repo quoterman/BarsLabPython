@@ -1,0 +1,7 @@
+Continue working with blog project
+
+1. Add users to your application. Change models.Post, adding a foreign key to User there, add a login and registration pages. On the home page you see only posts of authorized user.
+
+2. Use login_required decorator anywhere where it is possible
+
+3. Use django-based form (from forms.py) for post form.
