@@ -1,0 +1,11 @@
+PROHIBITED! STOP! NO! RESTRICTED! CLASSIFIED!
+
+So,
+
+1. Using sessions, prohibit adding two posts within 20 seconds from each other.
+
+2. Using DB, prohibit adding the post which text is completely equal to the latest post of user.
+
+Now. Comment methods and lines of code in 2.
+
+3. Do task 2 using sessions. As you understand it is bad idea to store full text of the post in session (it can be huge). So, think and offer the solution that uses sessions and does not store full text of the post, but works fine!
