@@ -1,0 +1,16 @@
+<p>{{ object.text }}</p>
+
+<p><i>by {{ object.user }}</i></p>
+
+<p>on {{ object.published_on }}</p>
+
+
+{% if beforetweets %}
+
+	<h2>Previous Tweets</h2>
+
+	{% for t in beforetweets %}
+		<p>{{ t.text }} on {{ t.published_on }}</p>
+	{% endfor %}
+
+{% endif %}
