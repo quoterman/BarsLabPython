@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:t="http://twistedmatrix.com/ns/twisted.web.template/0.1">
+    <head>
+        <title>
+            Twitter - Home
+        </title>
+    </head>
+
+    <body>
+            <div t:render="header"/>
+
+            <h1>Twitter</h1>
+            <div t:render="real_twitter">
+                <a>
+                    <t:attr name="href">
+                        <t:slot name="real_twitter_url"/>
+                    </t:attr>
+                    TWITTER
+                </a>
+            </div>
+            <form action="/" method="post">
+                <input type="text" name="tweet"/>
+                <input type="submit" value="send"/>
+            </form>
+
+            <ul>
+                <li t:render="tweet_list">
+                    <t:slot name="tweet"/>
+                </li>
+            </ul>
+            <!--div t:render="footer"/-->
+    </body>
+
+</html>
